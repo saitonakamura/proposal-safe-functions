@@ -51,3 +51,12 @@ function foo() {
   }
 }
 ```
+
+
+## Prior art
+
+* [Haskell do notation](https://en.wikibooks.org/wiki/Haskell/do_notation)
+* [F# computational expressions](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/computation-expressions)
+* [OCaml 4.08 binding operators](https://github.com/ocaml/ocaml/pull/1947)
+
+
