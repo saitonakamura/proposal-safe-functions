@@ -13,6 +13,7 @@ Error handling is hard and dynamic nature javascript doesn't help the issue. You
 safe function createWebSocket(url) {
   return new WebSocket(url)
 }
+
 safe function foo() {
   const webSocket = try createWebSocket('ws://example.com')
   const readyState = webSocket.readyState
@@ -21,6 +22,7 @@ safe function foo() {
 ```
 
 Which can be transpiled to
+
 ```js
 function createWebSocket(url) {
   try {
