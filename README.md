@@ -36,7 +36,7 @@ function foo() {
   try {
     const webSocketResult = createWebSocket('ws://example.com')
     
-    if (webSocketResult.ok) {
+    if (!webSocketResult.ok) {
       // return failed result
       return webSocketResult
     }
