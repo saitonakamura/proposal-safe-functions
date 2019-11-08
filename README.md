@@ -14,7 +14,7 @@ safe function createWebSocket(url) {
   return new WebSocket(url)
 }
 safe function foo() {
-  const webSocket = try createWebSockets('ws://example.com')
+  const webSocket = try createWebSocket('ws://example.com')
   const readyState = webSocket.readyState
   console.log('ready state is', readyState)
 }
